@@ -1,5 +1,5 @@
 using System.Security.AccessControl;
-using Tyuiu.DolganoAV.Sprint6.Task0.V7.Lib;
+using Tyuiu.DolganovAV.Sprint6.Task0.V7.Lib;
 namespace Tyuiu.DolganovAV.Sprint6.Task0.V7
 {
     public partial class FormMain : Form
