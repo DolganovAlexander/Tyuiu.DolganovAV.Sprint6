@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.DolganoAV.Sprint6.Task0.V7.Lib\Tyuiu.DolganoAV.Sprint6.Task0.V7.Lib.csproj" />
+    <ProjectReference Include="..\Tyuiu.DolganovAV.Sprint6.Task1.V26.Lib\Tyuiu.DolganovAV.Sprint6.Task1.V26.Lib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
