@@ -191,6 +191,7 @@
             Controls.Add(groupBoxOutput_DAV);
             Controls.Add(groupBoxInput_DAV);
             Controls.Add(groupBoxCond_DAV);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             MaximizeBox = false;
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
