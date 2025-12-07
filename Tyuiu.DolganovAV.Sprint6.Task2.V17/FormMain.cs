@@ -27,7 +27,7 @@ namespace Tyuiu.DolganovAV.Sprint6.Task2.V17
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Такс 1 выполнил студент группы ПИНб-25-1 Долганов Александр Витальевич", "Сообщение");
+            MessageBox.Show("Такс 2 выполнил студент группы ПИНб-25-1 Долганов Александр Витальевич", "Сообщение");
         }
     }
 }
