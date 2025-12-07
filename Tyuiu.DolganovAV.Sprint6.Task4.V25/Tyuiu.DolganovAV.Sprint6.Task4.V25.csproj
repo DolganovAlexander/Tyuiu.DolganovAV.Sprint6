@@ -9,12 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="HIC.System.Windows.Forms.DataVisualization" Version="1.0.1" />
-	  <PackageReference Include="winforms.datavisualization" Version="1.10.0" />
+    <PackageReference Include="winforms.datavisualization" Version="1.10.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.DolganovAV.Sprint6.Task2.V17.Lib\Tyuiu.DolganovAV.Sprint6.Task2.V17.Lib.csproj" />
+    <ProjectReference Include="..\Tyuiu.DolganovAV.Sprint6.Task4.V25.Lib\Tyuiu.DolganovAV.Sprint6.Task4.V25.Lib.csproj" />
   </ItemGroup>
 
 </Project>
