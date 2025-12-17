@@ -6,8 +6,8 @@ namespace Tyuiu.DolganovAV.Sprint6.Task7.V6
         public FormMain()
         {
             InitializeComponent();
-            openFileDialog_DAV.Filter = "Значения, разделенные запятыми (*.csv)|*.csv|Все файлы(*.*)|*.*";
-            saveFileDialog_DAV.Filter = "Значения, разделенные запятыми (*.csv)|*.csv|Все файлы(*.*)|*.*";
+            openFileDialog_DAV.Filter = "Г‡Г­Г Г·ГҐГ­ГЁГї, Г°Г Г§Г¤ГҐГ«ГҐГ­Г­Г»ГҐ Г§Г ГЇГїГІГ»Г¬ГЁ (*.csv)|*.csv|Г‚Г±ГҐ ГґГ Г©Г«Г»(*.*)|*.*";
+            saveFileDialog_DAV.Filter = "Г‡Г­Г Г·ГҐГ­ГЁГї, Г°Г Г§Г¤ГҐГ«ГҐГ­Г­Г»ГҐ Г§Г ГЇГїГІГ»Г¬ГЁ (*.csv)|*.csv|Г‚Г±ГҐ ГґГ Г©Г«Г»(*.*)|*.*";
         }
         DataService ds = new DataService();
         static string openFilePath;
@@ -39,10 +39,8 @@ namespace Tyuiu.DolganovAV.Sprint6.Task7.V6
             openFileDialog_DAV.ShowDialog();
             openFilePath = openFileDialog_DAV.FileName;
 
-            // Сначала загружаем данные из файла - это установит rows и cols
             int[,] loadedArray = LoadFromFileData(openFilePath);
-
-            // Только теперь rows и cols имеют правильные значения
+            
             dataGridViewInput_DAV.ColumnCount = cols;
             dataGridViewOutput_DAV.ColumnCount = cols;
             dataGridViewOutput_DAV.RowCount = rows;
@@ -54,10 +52,9 @@ namespace Tyuiu.DolganovAV.Sprint6.Task7.V6
                 dataGridViewOutput_DAV.Columns[i].Width = 35;
             }
 
-            // Заполняем input DataGridView
             for (int r = 0; r < rows; r++)
             {
-                for (int c = 0; c < cols; c++)  // исправлено: c++ вместо r++
+                for (int c = 0; c < cols; c++)  
                 {
                     dataGridViewInput_DAV.Rows[r].Cells[c].Value = loadedArray[r, c];
                 }
